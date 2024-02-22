@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To Do List</title>
+        <script type="module" src="app.js"></script>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <form action="" id="formulaire" method="GET">
+            <div id="divCreationTache">
+                <label for="importance">Importance de la tâche</label>
+                <select id="importance">
+                    <option value="">--Choisissez un nombre--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <br>
+                <label for="tache">Tâche</label>
+                <input id="tache" type="text" name="tache" placeholder="Nom de la tâche">
+                
+                <br>
+                <input type="hidden" name="date"><span class="error" id="errorname"></span>
+                <br>
+                <button id="btnAjout" type="submit">Ajouter</button>
+            </div>
+        </form>
+        
+
+        <div id="divListeTaches"> 
+            <button id="clear">Clear</button> <p id="countElements"></p>
+            <ul id="ulList">
+                <li>Index | Importance | Tâche | Date</li>
+            </ul>
+        </div>
+    </body>
+</html>
