@@ -17,6 +17,7 @@ export function addTache(valeurInputImportance, valeurInputTache, valeurDate) {
 
 	if (storedParagraphs) {
 		paragraphesArray = JSON.parse(storedParagraphs);
+		console.log(JSON.stringify(storedParagraphs));
 	}
 
 	paragraphesArray.push({ id: id, content: paragraphes.textContent }); // Stocker l'objet avec l'identifiant unique
