@@ -5,7 +5,7 @@ import {
 	displayErrorMessage,
 	getTasks,
 	clearTasks
-} from "./modele/modele.js";
+} from "./todolist/libs/modele.js";
 
 getTasks();
 
